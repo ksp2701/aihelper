@@ -14,7 +14,8 @@ import java.util.*;
 @CrossOrigin(origins = "*") // Allow Chrome extension to call it
 public class HintController {
 
-    private static final String OPENAI_API_KEY = "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"; // Your new OpenRouter key
+    private static final String OPENAI_API_KEY = System.getenv("OPENAI_API_KEY");
+ 
  
     private static final String OPENAI_URL = "https://openrouter.ai/api/v1/chat/completions";
 
