@@ -1,0 +1,4 @@
+build:
+  buildCommand: "./mvnw clean package"
+  environment:
+    JAVA_HOME: /opt/render/project/.java
