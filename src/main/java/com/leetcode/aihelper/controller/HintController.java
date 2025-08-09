@@ -30,7 +30,7 @@ public class HintController {
             Map<String, Object> payload = new HashMap<>();
             payload.put("model", "mistralai/mistral-7b-instruct");
             payload.put("messages", List.of(Map.of("role", "user", "content", prompt)));
-            payload.put("max_tokens", 100);
+            payload.put("max_tokens", 500);
 
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
